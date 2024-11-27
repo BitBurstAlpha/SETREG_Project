@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="h-full bg-green-500 flex flex-col text-gray-900 font-sans">
         {/* Header */}
         <header className="bg-green-600 text-white sticky top-0 z-50 shadow-md">
-          <div className="flex justify-between items-center p-5 max-w-screen-xl mx-auto">
+          <div className="flex justify-between items-center p-5 max-w-screen-xl mx-auto flex-wrap">
             <Link href="/">
               <Image
                 src="/setreg-logo.png"
@@ -29,7 +29,7 @@ export default function RootLayout({
                 className="logo"
               />
             </Link>
-            <nav className="flex gap-8 text-lg">
+            <nav className="flex gap-8 text-lg mt-4 sm:mt-0">
               <Link href="/Jobs">Jobs</Link>
               <Link href="/Dashboard">Dashboard</Link>
               <Link href="/Payments">Payments</Link>
@@ -53,9 +53,9 @@ export default function RootLayout({
           <div className="footer-container text-center">
             <p>&copy; {new Date().getFullYear()} SETReG. All Rights Reserved.</p>
             <nav className="mt-4">
-              <a href="#" className="mx-3">About</a>
-              <a href="#" className="mx-3">Privacy Policy</a>
-              <a href="#" className="mx-3">Terms and Conditions</a>
+              <a href="/About" className="mx-3">About</a>
+              <a href="/PrivacyPolicy" className="mx-3">Privacy Policy</a>
+              <a href="TermsandConditions" className="mx-3">Terms and Conditions</a>
             </nav>
           </div>
         </footer>
@@ -63,6 +63,7 @@ export default function RootLayout({
     </html>
   );
 }
+
 
 
 
