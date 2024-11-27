@@ -1,0 +1,48 @@
+.how-it-works {
+  background-color: white; /* White background */
+  color: #333; /* Dark gray text for readability */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.how-it-works-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step {
+  padding: 20px;
+}
+
+.step-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.step-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .steps-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .step {
+    flex: 1;
+    text-align: left;
+  }
+}
+  
